@@ -1,44 +1,67 @@
+
+body{
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 0 !important;
+}
 .mainImg {
-    position: relative;
+    position: sticky;
+    top: 0% !important;
     text-align: center;
+    position: absolute;
 }
 .mainImg img{
     width: 100%;
-    height: 80vh;
+    height:70vh;
 }
 
 
 .data {   
-    margin: 3%;
-    position: absolute;
-    top: 60vh;
+    margin: 0 3%;
+    top: 55vh;
     background-color: white;
     border-radius: 1rem;
     padding: 0.4rem 13rem 0.4rem 13rem;
     text-align: center;
-
+    position: relative;
+    margin-bottom: 55vh;
 }
 
 .data h1 ,h3{
     margin-top: 0.5rem;
     margin-bottom: .5rem;
-    font-family: TAPhilausophy,Helvetica,Arial,sans-serif;
+    font-family: "TAPhilausophy,Helvetica,Arial,sans-serif";
     line-height: 1.15;
 }
 h1{    
     font-size: 5rem;
     font-weight: 600;
-    color: cornflowerblue;    
-    padding-top: 3%;
+    color:orange;    
     text-transform:uppercase;
+}
+h2{
+    font-size: 54px;
+    font-weight: 300;
+    color: black;
+    font-family: "antonio,sans-serif";
+    margin-bottom: 5%;
+    text-align: center;
 }
 h3{
     padding: 2% 0 2% 0;
     font-weight: normal;
+    font-size: 34px;
+    text-transform: uppercase;
+    text-align: center;
+    font-family:'eb_garamondsemibold';
 }
-.data p{
-    text-align:left;
+p{
+    font-size:22px ;
+    font-family: 'Lato', sans-serif;
+    font-weight: 600;
 }
+
 body{
     background-color: tan;
     font-family: TABanjo,Helvetica,Arial,sans-serif,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
@@ -49,9 +72,6 @@ body{
 .video iframe{
     width: 40vw;
     height: 50vh;
-}
-.titlePlace{
-    text-align: left;
 }
 
 
@@ -131,11 +151,11 @@ body{
     font-family: 'Open Sans', sans-serif;
 }
 .cityMap h2{
-    margin:4%
+    margin:4%;
 }
 .cityMap{
-    display: inline-block;
     text-align: center;
+    display: inline-block;
 }
 
 
@@ -148,6 +168,7 @@ body{
         margin: 0%;
         border-radius: 0;
         top: 40vh;
+        margin-bottom: 40vh;
     }
     .video iframe{
         width: 50vw;
@@ -169,7 +190,6 @@ body{
     .data{
         padding:4%;
     }
-
 }
 @media screen and (max-width:700px)
 {
