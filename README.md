@@ -1,2 +1,0 @@
-# Midguide
-Minor project
