@@ -1,0 +1,68 @@
+    <%- include("header.ejs")%>
+    
+<link href="/css/register.css" rel="stylesheet" type="text/css">
+            
+        
+    
+    
+  
+ 
+  </form>
+
+    <form class="form" action="/register" method="POST">
+      
+      <div class="register-div">
+        <h1 class="navbar-brand  h1">Register Now </h1>
+      </div>
+        
+        <div class="form-group col-md-12 ">
+          <label for="inputPassword4">Full Name:</label>
+          <input name="fullname" type="text" class="form-control" id="inputPassword4" placeholder="">
+        </div>
+        <div class="form-group col-md-12 ">
+          <label for="username1">Username:</label>
+          <input name="Username" type="text" class="form-control" id="inputPassword5" placeholder="">
+        </div>
+        <div class="form-group col-md-12" style="top: 50px;">
+          <label for="inputEmail4">Email:</label>
+          <input name="email" type="email" class="form-control" id="inputEmail4" placeholder="">
+        </div>
+      <div class="form-group col-md-12" style="top: 70px;">
+        <label for="inputAddress">Password:</label>
+        <input name="password" type="password" class="form-control" id="inputAddress" placeholder="">
+      </div>
+     
+      
+      <!-- <div class="form-group  col-md-12" style="top: 90px;">
+          <label for="inputAddress" class="plns">Plans:</label>
+       
+          <div class="form-check custom-control custom-radio ">
+          <input class="" name="customRadio" type="radio" id="customRadio1">
+          <label class="form-check-label" for="customRadio1">
+            Standard
+          </label>
+        </div> -->
+        <!-- <div class="form-check custom-control custom-radio ">
+          <input class=" " name="customRadio" type="radio" id="customRadio2">
+          <label class="form-check-label two-label" for="customRadio2">
+            Advanced
+          </label>
+        </div>
+        <div class="form-check custom-control custom-radio ">
+          <input class=" " name="customRadio" type="radio" id="gridCheck-two">
+          <label class="form-check-label " for="gridCheck-two">
+            Pro
+          </label>
+        </div>
+      </div> -->
+      <div class="div">
+        <button type="submit" class="btn btn-primary" >Sign Up</button>
+        <p class="already" style="color: white;"> already Registered? <a href="login" style="text-decoration: none; filter: brightness(150%);">Sign In</a></p>
+      </div>
+      
+    </form>
+
+    <script>
+
+    </script>
+<%- include("footer.ejs")%>

@@ -1,0 +1,34 @@
+<%- include("header.ejs")%>
+<link href="/css/login.css" rel="stylesheet" type="text/css">
+<form action="/login" method="POST" class="login-form">
+  <h1 class="navbar-brand mb-0 h1s">Login</h1>
+          <div class="form-group col-md-12">
+            <label for="inputPassword">Email/ Username:</label>
+            <input type="text"name='Username' class="form-control" id="inputPassword" placeholder="Username" required>
+          </div>
+          <div class="form-group col-md-12">
+            <label for="inputPassword4">Password: </label>
+            <input type="password" name = 'password' class="form-control" id="inputPassword4" placeholder="password" required>
+            <div class="i-icon">
+            <i class="far fa-eye" aria-hidden="true" id="togglePassword"></i>
+        </div>
+        <!-- <p class="m-p">! Password is your mobile number.</p> -->
+          </div>
+        <div class="sub">
+          <button type="submit" class="btn btn-primary">Sign in</button>
+          <p>
+            <span style="font-weight: 600;">New User 
+            </span>  ?
+            <span>
+              <a href="register">Sign Up 
+              </a>
+            </span>
+          </p>
+        </div>
+         
+    </form>
+
+    <!-- <div   style=" background-color: aqua;" class="div-ex" id="div-id"> -->
+
+    </div>
+    <%- include("footer.ejs")%>

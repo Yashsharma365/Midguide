@@ -1,0 +1,184 @@
+<%- include("header.ejs")%> 
+ 
+<%pla.forEach((ele)=>{ %>
+  
+
+  <script src='https://api.mapbox.com/mapbox-gl-js/v2.1.1/mapbox-gl.js'></script>
+  <link href='https://api.mapbox.com/mapbox-gl-js/v2.1.1/mapbox-gl.css' rel='stylesheet' />
+  <script src="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-directions/v4.1.0/mapbox-gl-directions.js"></script>
+  <link rel="stylesheet" href="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-directions/v4.1.0/mapbox-gl-directions.css" type="text/css"/>
+  <script src="https://kit.fontawesome.com/536fa53d8d.js" crossorigin="anonymous"></script>
+  <script src='https://code.jquery.com/jquery-3.6.0.js'></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Antonio&family=Lato:ital,wght@1,300&display=swap" rel="stylesheet">
+  <script src='/js/<%=ele.city%>.js' defer></script>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital@1&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=New+Tegomin&display=swap" rel="stylesheet"> 
+
+<link rel="stylesheet"  href="/css/head.css">
+<link rel="stylesheet"  href="/css/city.css">
+  <!-- <link rel="stylesheet"  href="/css/header.css"> -->
+
+<style>
+   
+</style>	
+<main>
+    <div class="mainImg">
+    <img src = '<%= ele.header_image %>' ></img>
+    
+    </div>
+  <section class="data">
+    <section class="quote">
+    <h1><%=ele.name%>   </h1>
+    
+    <h3><%=h3tag%></h3>
+    <p><%=ele.about%></p>
+  </section>
+  
+  <section class="video">
+    <iframe width="700px" height="400px" src="https://www.youtube-nocookie.com/embed/<%= ele.youtube%>" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  </section>
+  
+  
+  <!-- PLACES GO BELOW -->
+  <%if(related == ""){%>
+    <div></div>
+  <%}else{%>
+<h2 class="titlePlace" >PLACES TO GO IN <%=ele.city%></h2>
+<%}%>
+<section class="place">
+    <div class="slider owl-carousel ">
+        <%related.forEach(ele=>{ var i = 0;%>
+        <div class="card">
+            <div class="img">
+             
+              <!-- <%ele.nearby_place_image.forEach(imgs =>{%>
+                <img src='imgs'  alt=""> 
+                <%})%> -->
+                <img src='<%=ele.header_image%>'  alt="">
+              </div>
+            <div class="content">
+                <div class="title">
+                    <%= ele.name  %>
+                </div>
+                <p>
+                    <%= ele.about%>
+                </p>           
+            </div>
+        </div>
+        <% i++ })%>
+    </div>
+</section>
+
+  
+  <!-- MAP GOES BELOW -->
+  
+  <section class="cityMap">
+    <h2 class="peek-title" >MAP</h2>
+    <div id='map'></div>
+  </section>
+  
+  
+  
+<h2>OTHER LOCATIONS</h2>
+<div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
+  </div>
+  <div class="carousel-inner near">
+
+    <div class="carousel-item active">
+      <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#777"/><img src="https://www.alightindia.com/CDN/Content/Images/PostImages/ORIGINAL/Pachmarhi2-390911.jpg" class="responsive"></svg>
+
+      <div class="container">
+        <div class="carousel-caption text-start">
+          <h1>Pachmarhi</h1>
+          <p>Look deep into nature, and then you will understand everything better</p>
+          <p><a class="btn btn-lg btn-primary" href="pachmarhi.html">VISIT</a></p>
+          <p></p>
+        </div>
+      </div>
+    </div>
+
+      <div class="carousel-item">
+      <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#777"/><img src="https://previews.123rf.com/images/booblgum/booblgum2008/booblgum200800122/153336995-outline-indore-india-city-skyline-with-blue-buildings-and-reflections-vector-illustration-tourism-co.jpg" id="opacity" class="responsive"></svg>
+
+      <div class="container">
+        <div class="carousel-caption">
+          <h1>Indore</h1>
+          <p>Distance 90km</p>
+          <p><a class="btn btn-lg btn-primary" href="indore.html">VISIT</a></p>
+        </div>
+      </div>
+    </div>
+
+    <div class="carousel-item">
+      <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#777"/><img src="http://www.indiantempletour.com/wp-content/uploads/2018/09/Header-Sanchi.jpg" class="responsive"></svg>
+
+      <div class="container">
+        <div class="carousel-caption text-end">
+          <h1>Sanchi</h1>
+          <p>
+            Distance 55km
+          </p>
+          <p><a class="btn btn-lg btn-primary" href="sanchi.html">VISIT</a></p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon " aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+
+
+</section>
+  </main>
+  <%})%>
+<script>
+  $(".slider").owlCarousel({
+    loop:true,
+    autoplay:true,
+    autoplayTimeout:5000,
+    autoplayHoverPause:true,
+    responsive:{
+      0:{
+        items:1
+      },
+        600:{
+          items:2
+        },
+        800:{
+          items:3
+        },
+
+    }
+
+  });
+
+
+</script>
+<script>
+
+fetch("places.json")
+.then(Response => response.json())
+.then(data =>{
+    console.log(data.name)
+})
+</script>
+
+
+
+<%- include("footer.ejs")%> 
