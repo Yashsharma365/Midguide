@@ -1,0 +1,30 @@
+body{
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRg2VvUFsBs88MvLW88BDHRGTG51TULREkLKVU9tselZNKzUumFIOWDXOX8Q51oPmjPiyc&usqp=CAU");
+    background-repeat: no-repeat;
+    background-size: 100%;
+
+}
+.about{
+    font-size: 60px;
+    margin-top: 10px;
+    text-align: center;
+}
+.des{
+    font-size: 30px;
+    text-align: center;
+}
+.intro{
+    font-size: 20px;
+    margin: 20px;
+    padding: 0%;
+
+    margin-right: 10vw;
+    margin-left: 10vw;
+    text-align: center;
+}
+.made{
+    font: 40px;
+}
+.mem{
+    font-size: 30px;
+}

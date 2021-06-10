@@ -1,0 +1,210 @@
+<%- include("header.ejs")%>
+  <script src='https://api.mapbox.com/mapbox-gl-js/v2.1.1/mapbox-gl.js'></script>
+  <link href='https://api.mapbox.com/mapbox-gl-js/v2.1.1/mapbox-gl.css' rel='stylesheet' />
+  <script src="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-directions/v4.1.0/mapbox-gl-directions.js"></script>
+  <link rel="stylesheet" href="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-directions/v4.1.0/mapbox-gl-directions.css" type="text/css"/>
+  <script src="https://kit.fontawesome.com/536fa53d8d.js" crossorigin="anonymous"></script>
+  <script src='https://code.jquery.com/jquery-3.6.0.js'></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Antonio&family=Lato:ital,wght@1,300&display=swap" rel="stylesheet">
+  <script src="/js/bhopal.js" defer></script>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital@1&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=New+Tegomin&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet"  href="/css/Bhopal.css">
+  <!-- <link rel="stylesheet"  href="/css/header.css"> -->
+
+	
+<main>
+    <div class="mainImg  ">
+    <img src="/images/bhopal/bhopal.webp" >
+    </div>
+  <section class="data">
+    <section class="quote">
+    <h1>Bhopal</h1>
+    <h3>Capital of M.p. and the city of lake</h3>
+    <p>Bhopal is a city in the central Indian state of Madhya Pradesh. It's one of India’s greenest cities. <br>There are two main lakes, the Upper Lake and the Lower Lake.<br>Towards the North you have the old city, a fascinating area of mosques, serpentine alleys, chowks,and crowded bazaars.<br>South of the two lakes is the new Bhopal.Modern, with wide roads, upmarket shopping complexes, plush hotels,malls and restaurants.</p>
+  </section>
+  
+  <section class="video">
+    <iframe width="700px" height="400px" src="https://www.youtube-nocookie.com/embed/n-DbqB4iNrU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  </section>
+  
+  
+  <!-- PLACES GO BELOW -->
+  
+  
+  <h2 class="titlePlace">PLACES TO GO IN BHOPAL</h2>
+  <section class="place">
+    <div class="slider owl-carousel ">
+  
+      <div class="card">
+          <div class="img"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7a/Sambar_%28Cervus_unicolor_unicolor%29_male.jpg/1200px-Sambar_%28Cervus_unicolor_unicolor%29_male.jpg" alt=""></div>
+          <div class="content">
+              <div class="title">Van Vihar</div>
+              <p>
+                Van Vihar National Park and Zoo is one of the most revered National Park and Zoo of Central India and is a shining beacon in the field of conservation. It is an amazing world of winged creatures, free ranging ungulates and captive carnivores in the midst of greenery.<br>Timing:6.50-6.30(except Friday)
+              </p>           
+          </div>
+      </div>
+  
+      <div class="card">
+          <div class="img"><img src="https://content3.jdmagicbox.com/comp/bhopal/f8/0755px755.x755.180921223234.p3f8/catalogue/sair-sapata-bhopal-bhopal-v2z1if26ua.jpg?clr=1c4a4a" alt=""></div>
+          <div class="content">
+              <div class="title">Sair Sapata</div>
+              <p>Sair Sapata is a tourism and entertainment complex situated on the banks of the Upper Lake in Bhopal.It is a significant entertainment zone.Sair Sapata offers enjoyable activities like forest hiking, car dashing, zorbing and so on. <br> 11:00 AM - 10:00 PM </p>            
+          </div>
+      </div>
+  
+      <div class="card">
+          <div class="img"><img src="https://media-cdn.tripadvisor.com/media/photo-m/1280/1a/fb/00/a3/birla-mandir.jpg" alt=""></div>
+          <div class="content">
+              <div class="title">Birla Mandir</div>
+              <p>  Birla Mandir also known as Lakshami Narayan temple .It is perched atop the Arrera hills. Behind the temple, you will have a glimpse of beautiful lake.There is a small garden beside the main template where you can sit an relax.There is also a small museum in the temple premises. <br>Timing- 12.00-4.00 Pm
+              </p>  
+          </div>
+        </div>
+  
+        <div class="card">
+          <div class="img"><img src="https://i.pinimg.com/originals/20/a1/17/20a11772bcf91be9a47e373d9d00a16d.jpg" alt=""></div>
+          <div class="content">
+              <div class="title">Lake view</div>
+  
+              <p>Telling about bhopal,without mentioning lake view is disrespectable.Located near van vihar.Part of upper lake and home of raja bhoj's statue.<br> Timing: 6.00 Am-7.00 Pm </p>
+              
+          </div>
+      </div>
+  
+  </div>
+  </section>
+  
+  <!-- MAP GOES BELOW -->
+  
+  <section class="cityMap">
+    <h2 >PEEK AT BHOPAL</h2>
+    <div id='map'></div>
+  </section>
+  
+  
+  <h2>NEARBY CITIES</h2>
+  <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
+    </div>
+    <div class="carousel-inner">
+  
+      <div class="carousel-item active">
+        <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#777"/><img src="https://www.alightindia.com/CDN/Content/Images/PostImages/ORIGINAL/Pachmarhi2-390911.jpg" class="responsive"></svg>
+  
+        <div class="container">
+          <div class="carousel-caption text-start">
+            <h1>Panchmari </h1>
+            <p>Look deep into nature, and then you will understand everything better</p>
+            <p><a class="btn btn-lg btn-primary" href="#">VISIT</a></p>
+            <p></p>
+          </div>
+        </div>
+      </div>
+  
+        <div class="carousel-item">
+        <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#777"/><img src="https://previews.123rf.com/images/booblgum/booblgum2008/booblgum200800122/153336995-outline-indore-india-city-skyline-with-blue-buildings-and-reflections-vector-illustration-tourism-co.jpg" id="opacity" class="responsive"></svg>
+  
+        <div class="container">
+          <div class="carousel-caption">
+            <h1>Indore</h1>
+            <p>Distance 90km</p>
+            <p><a class="btn btn-lg btn-primary" href="#">VISIT</a></p>
+          </div>
+        </div>
+      </div>
+  
+      <div class="carousel-item">
+        <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#777"/><img src="http://www.indiantempletour.com/wp-content/uploads/2018/09/Header-Sanchi.jpg" class="responsive"></svg>
+  
+        <div class="container">
+          <div class="carousel-caption text-end">
+            <h1>Sanchi</h1>
+            <p>
+              Distance 55km
+            </p>
+            <p><a class="btn btn-lg btn-primary" href="#">VISIT</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon " aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+  
+  
+  </section>
+  </main>
+  
+  
+  <footer>
+    <div class="container">
+      <div class="row text-center text-xs-center text-sm-left text-md-left">
+        <div class="col-xs-12 col-sm-4 col-md-4">
+          <h5>Quick links</h5>
+          <ul class="list-unstyled quick-links">
+            <li><a href="https://www.fiverr.com/share/qb8D02"><i class="fa fa-angle-double-right"></i>Home</a></li>
+            <li><a href="https://www.fiverr.com/share/qb8D02"><i class="fa fa-angle-double-right"></i>About</a></li>
+            <li><a href="https://www.fiverr.com/share/qb8D02"><i class="fa fa-angle-double-right"></i>Destinations</a></li>
+            <li><a href="https://www.fiverr.com/share/qb8D02"><i class="fa fa-angle-double-right"></i>Map</a></li>
+            <li><a href="https://www.fiverr.com/share/qb8D02"><i class="fa fa-angle-double-right"></i>Nature</a></li>
+          </ul>
+        </div>
+        <div class="col-xs-12 col-sm-4 col-md-4">
+          <h5>Quick links</h5>
+          <ul class="list-unstyled quick-links">
+            <li><a href="https://www.fiverr.com/share/qb8D02"><i class="fa fa-angle-double-right"></i>Culture</a></li>
+            <li><a href="https://www.fiverr.com/share/qb8D02"><i class="fa fa-angle-double-right"></i>Heritage</a></li>
+            <li><a href="https://www.fiverr.com/share/qb8D02"><i class="fa fa-angle-double-right"></i>Adventure</a></li>
+            <li><a href="https://www.fiverr.com/share/qb8D02"><i class="fa fa-angle-double-right"></i>Wildlife</a></li>
+          </ul>
+        </div>
+        <div class="col-xs-12 col-sm-4 col-md-4">
+          <h5>Contact us</h5>
+          <ul class="list-unstyled quick-links">
+            <li><i class="fa fa-angle-double-right"><a href="#"></i>1800-113-7543 (10:00 AM to 6:00 PM) <br> ( All Sunday Off)</a></li>
+            <li><i class="fa fa-angle-double-right"><a href=""></i>Email:- Mpguide_oct@gmail.com</a></li>
+          </ul>
+          
+          
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-12 mt-2 mt-sm-5">
+          <ul class="list-unstyled list-inline social text-center">
+            <li class="list-inline-item"><a href="https://www.fiverr.com/share/qb8D02"><i class="fa fa-facebook"></i></a></li>
+            <li class="list-inline-item"><a href="https://www.fiverr.com/share/qb8D02"><i class="fa fa-twitter"></i></a></li>
+            <li class="list-inline-item"><a href="https://www.fiverr.com/share/qb8D02"><i class="fa fa-instagram"></i></a></li>
+            <li class="list-inline-item"><a href="https://www.fiverr.com/share/qb8D02"><i class="fa fa-google-plus"></i></a></li>
+            <li class="list-inline-item"><a href="https://www.fiverr.com/share/qb8D02" target="_blank"><i class="fa fa-envelope"></i></a></li>
+          </ul>
+        </div>
+        <hr>
+      </div>	
+      <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-12 mt-2 mt-sm-2 text-center text-white">
+          <p><u><a href="">MP-Guide</a></u> is a minor project made for decreasing the hassale of visiting multiple websites.</p>
+          <p class="h6">© All right Reversed.<a class="text-green ml-2" href="https://www.sunlimetech.com" target="_blank"></a></p>
+        </div>
+        <hr>
+      </div>	
+    </div>
+  </footer>
+  <%- include("footer.ejs")%>

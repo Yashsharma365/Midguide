@@ -1,0 +1,16 @@
+<%- include("header.ejs")%>
+<link rel="stylesheet"  href="/css/search.css">
+<h1 class="search-h" style="margin-top: 40px;">Search Results</h1>
+<ol>
+<% if(sea[0] != "Search not found"){sea.forEach((ele)=>{ %>
+    
+        <li> 
+            <a href="/places/<%= ele %>" class="D-link"><%= ele%></a>
+        </li>
+    
+<%})%>
+</ol>
+<%} else{sea.forEach((ele)=>{  %>
+    <h2><%= ele%></h2>        
+<%})}%>
+<%- include("footer.ejs")%>

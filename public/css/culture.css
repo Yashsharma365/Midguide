@@ -1,0 +1,73 @@
+.image{
+	display: inline-block;
+	width: 35vw;
+	position: fixed;
+	height: 100vh;
+}
+   .row{
+        --bs-gutter-x: 0rem !important;
+    }
+.data .container-fluid{
+	float: right;
+    width: 65%;
+    padding-left: 0;
+    padding-right: 0;
+    
+}
+.hover{
+    margin-left: 3vw;
+    margin-bottom: 3vh;
+
+}
+.hover img{
+    height: 40vh;
+    width: 100%;
+}
+.hover-r{
+    margin-left: 0;
+    margin-right: 2.5vw;
+
+}
+.row h1{
+	margin-top: 4%;
+	text-align: center;
+}
+.blurb,.hover{
+	margin-top: 5%;
+}
+
+@media screen and (max-width: 750px) {
+    .row{
+        --bs-gutter-x: 0rem !important;
+    }
+    .image{
+		display: block;
+		float: none;
+		width: 100%;
+		position: relative;
+		height: 60vh;
+        margin-top: 7%;
+	}
+	.data .container-fluid{
+		text-align: center;
+		float: none;
+        width: 100%;
+	}
+    .hover{
+        margin-left: 0%;
+    }
+    .hover-r{
+        margin-right: 0%;
+    }
+	
+}
+@media screen and (max-width: 400px) {
+    .image{
+		height: 60vh;
+        margin-top: 15%;
+	}
+    }
+
+
+@import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+  
